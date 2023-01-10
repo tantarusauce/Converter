@@ -32,9 +32,11 @@ class processing():
       outp = outemp + ' %= ' + self.string[i04dx + 1 :]
     elif(i99dx != -1):
       outemp = self.string[:i99dx]
+      typ = ""
       if(outemp not in variable):
         #初めての変数使用
         typ = "long long double "
+        variable.append(outemp)
       outp = typ + outemp + ' = ' + self.string[i99dx + 1 :]
     outpu = outp.replace('\n', '')
     return outpu

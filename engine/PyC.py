@@ -51,7 +51,7 @@ class processing():
 
 class other():
   def __init__(self):
-    os.chdir('./プログラムコンバータ/programs')#programsフォルダへ移動
+    os.chdir('./converter/programs')#programsフォルダへ移動
   
   def read(self, p):
     leng = 0
